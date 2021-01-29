@@ -1,0 +1,17 @@
+.main-card {
+    width: 50%;
+    margin: 100px auto 0 auto;
+    padding: 30px;
+    background-color: #e6e6e6;
+    text-align: center;
+    height: 150px;
+}
+
+input{
+    display: block;
+    margin: auto;
+}
+
+button{
+    margin: 10px
+}
