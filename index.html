@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Learning javascript</title>
+  </head>
+
+  <body>
+    <p>What is the secret Number?</p>
+    <input id="answer" />
+    <button id="myButton">click</button>
+
+    <script type="text/javascript">
+      document.getElementById("myButton").onclick = function () {
+        var x = Math.random();
+        x = x * 100;
+        x = Math.floor(x);
+        console.log(x);
+        if (document.getElementById("answer").value.match(/^[0-9]+$/)) {
+          if (document.getElementById("answer").value == x) {
+            alert("it's correct");
+          } else if (document.getElementById("answer").value < x) {
+            alert("its to cold");
+          } else if (document.getElementById("answer").value > x) {
+            alert("its to hot!!");
+          }
+        } else {
+          alert("please enter a valid number");
+        }
+      };
+    </script>
+  </body>
+</html>
